@@ -1,5 +1,8 @@
 # Change Log
 
+## 1.0.0 - 2021-12-11
+- rename after fork
+
 ## 0.5.12 - 2018-03-16
 - merge #77
 - update doc for the refer for DecorationRenderOptions
