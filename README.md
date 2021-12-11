@@ -3,7 +3,7 @@ VSCODE-LMX-HIGHLIGHT
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
-Спецефичный плагин VS Code для подсветки слов в коде
+Special plugin for VS Code highlighting text in code
 
 ### Preview
 
