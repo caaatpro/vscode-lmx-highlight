@@ -33,8 +33,8 @@ jobs:
           release_name: Release ${{ github.ref }}
           draft: false
           prerelease: false
-  
-      - name: upload linux artifact
+
+      - name: upload release
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -43,3 +43,13 @@ jobs:
           asset_path: ./vscode-lmx-highlight-1.0.0.vsix
           asset_name: vscode-lmx-highlight-1.0.0.vsix
           asset_content_type: application/gzip
+
+      - name: upload config
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./config.json
+          asset_name: config.json
+          asset_content_type: application/json
